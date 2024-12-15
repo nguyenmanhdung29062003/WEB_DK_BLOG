@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.form-control {
+    max-width: 500px;
+    margin: auto;
+}
+
+.back-to-login {
+    margin-left: 8px !important;
+}
+
+.activation-message {
+    font-size: 15px !important;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid grey;
+    color: gray;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    margin-top: 25px;
+}
+
+.signin:after {
+    background: #fff;
+    content: 'or you can sign in with';
+    padding: 0 10px;
+    position: relative;
+    top: -13px;
+}
+
+
+.signup:after {
+    background: #fff;
+    content: 'or you can sign up with';
+    padding: 0 10px;
+    position: relative;
+    top: -13px;
+}
+
+/* Profile Page Styling */
+.profile {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* margin-left: 30px; */
+}
+
+.profileImage img {
+    border-radius: 50% !important;
+    width: 150px !important;
+    height: 150px !important;
+}
+
+
+.profileTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 50px;
+}
+
+/* Media Query for Profile  Title */
+@media screen and (max-width: 680px) {
+    .profileTitle {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.profileTitle .button {
+    margin-bottom: 15px;
+}
+
+
+.profileData .vff {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 50px;
+    color: rgb(66, 73, 175);
+}
+
+.profileData .vff .viewedBy {
+    margin-right: 10px;
+}
+
+.profileData .vff .viewedBy:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.profileData .vff .followers {
+    margin-right: 10px;
+}
+
+.profileData .vff .followers:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.profileData .vff .following {
+    margin-right: 10px;
+}
+
+.profileData .vff .following:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.profileData .social {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+
+.profileData .social a {
+    color: black;
+    margin: 5px;
+}
+
+
+.profileData .social a:hover {
+    color: rgb(66, 73, 175)
+}
+
+.profileData .bio {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
+
+.peopleWhoViewedYourProfileList {
+    margin-bottom: 10px;
+}
+
+.user-blogs {
+    margin-top: 30px;
+}
+
+
+
+
+.latestBlogLDC {
+    display: flex;
+    color: #4183c4;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.latestBlogLDC p {
+    margin-right: 14px;
+}
+
+.blog-read-more-button:hover {
+    border-bottom: 2px solid #4183c4;
+}
+
+.single-blog-author {
+    display: flex;
+    align-items: center;
+}
+
+/* Media Query for Profile  Title */
+/* @media screen and (max-width: 680px) {
+    .single-blog-author {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+} */
+
+.single-blog-header {
+    margin-top: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.single-blog-header img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.single-blog-desc {
+    font-size: 18px;
+}
+
+.single-blog-desc ul {
+    margin-left: 10px;
+}
+
+.single-blog-desc pre {
+    background-color: #f1f1f1;
+    margin: -20px 0px;
+    padding: 20px;
+    white-space: pre-wrap;
+    line-height: 24px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 90%;
+}
+
+.single-blog-desc img {
+    display: block;
+    margin: auto;
+    max-width: 100% !important;
+}
+
+.single-blog-content img {
+    width: 60%;
+    height: 300px;
+}
+
+.author-data {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.single-blog-vldc {
+    display: flex;
+    font-size: 17px;
+    color: #4183c4;
+}
+
+.single-blog-vldc p {
+    margin-right: 16px;
+}
+
+.single-blog-vldc p .icon:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Comments on blog */
+
+.single-blog-comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.comment-data {
+    white-space: pre-wrap;
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.deleteComment {
+    position: absolute;
+    left: 70%;
+}
+
+.deleteComment:hover {
+    cursor: pointer;
+}
+
+
+/* Write Blog CSS */
+.write {
+    padding-top: 50px;
+}
+
+.writeImg {
+    width: 70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.writeForm {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.writeFormGroup {
+    display: flex;
+    align-items: center;
+}
+
+.writeIcon {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    color: rgb(129, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.writeInput {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 58vw;
+}
+
+.writeInput::placeholder {
+    color: rgb(189, 185, 185);
+    font-weight: 400;
+}
+
+.writeInput:focus {
+    outline-style: none;
+}
+
+.writeText {
+    width: 70vw;
+    height: 100vh;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+.writeSubmit {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: white;
+    background-color: teal;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.ui .input {
+    width: 100% !important;
+}
+
+.ui[class*="left icon"].input>input {
+    border-radius: 100px;
+}
