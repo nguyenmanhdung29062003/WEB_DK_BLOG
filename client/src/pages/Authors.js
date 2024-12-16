@@ -6,6 +6,7 @@ import { formatDate, searchAuthors } from '../app/helpers';
 import { toast } from 'react-toastify';
 import { getAllUsers } from '../features/admin/adminSlice';
 
+
 const checkIfPrimeUser = ({ email }) => {
     let emails = ['porwalarjun95@gmail.com'];
     if (emails.includes(email)) return true;
@@ -126,9 +127,9 @@ function Authors() {
                                 <Table.HeaderCell>Email</Table.HeaderCell>
                                 <Table.HeaderCell>User Creation date</Table.HeaderCell>
                                 <Table.HeaderCell>User Role</Table.HeaderCell>
-                                <Table.HeaderCell>Blogs</Table.HeaderCell>
                                 <Table.HeaderCell>Contact</Table.HeaderCell>
                                 <Table.HeaderCell>Setting</Table.HeaderCell>
+                                <Table.HeaderCell></Table.HeaderCell>
                             </Table.Row>
                         </Table.Header>
 

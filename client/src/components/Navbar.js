@@ -91,7 +91,7 @@ function Navbar() {
                         to='/category'
                     /> : null
                 }
-                {/* {profile?.role === "admin" ?
+                {profile?.role === "admin" ?
                     <Menu.Item
                         name='Authors'
                         active={activeItem === 'authors'}
@@ -99,7 +99,7 @@ function Navbar() {
                         as={Link}
                         to='/authors'
                     /> : null
-                } */}
+                }
                 <Menu.Menu position='right'>
                     {!user ?
                         <Fragment>

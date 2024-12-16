@@ -91,7 +91,7 @@ const getAllUsers = asyncHandler(async (req, res) => {
     for (let i = 0; i < users.length; i++) {
         let currUser = { ...users[i]._doc };
         currUser['profile'] = await Profile.findOne({ user: users[i]._id });
-        // currUser['blogs'] = await Blog.find({ user: users[i]._id });
+        currUser['blogs'] = await Blog.find({ user: users[i]._id });
         responseArr.push(currUser);
     }
     res.status(200).json(responseArr);
